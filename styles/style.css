@@ -126,8 +126,6 @@ body {
   position: absolute;
   top: 55%;
   right: 10%;
-  
-
 }
 
 .Clothes:hover {
@@ -135,10 +133,26 @@ body {
   opacity: .2; 
    filter: brightness(120%); 
     transition: opacity 0.3s ease-in-out;
-    transform: rotate(-3deg); 
- 
-  
+    transform: rotate(-3deg);   
 }
+
+
+
+
+.Clothes2 {
+  position: absolute;
+  top: 33%;
+  right: 35%;
+}
+
+.Clothes2:hover {
+  
+  opacity: .2; 
+   filter: brightness(120%); 
+    transition: opacity 0.3s ease-in-out;
+    transform: rotate(0deg);   
+}
+
 
 
 .Clock {

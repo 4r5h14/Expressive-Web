@@ -17,6 +17,15 @@ disappear.addEventListener('click', function(){
 
 
 
+let disappear2 = document.querySelector('.Clothes2');
+
+disappear2.addEventListener('click', function(){
+  let clothes = document.querySelector(".Clothes2");
+  this.remove(clothes);
+});
+
+
+
 let lightleft = document.querySelector('.light1');
 
 lightleft.addEventListener('click', function() {
