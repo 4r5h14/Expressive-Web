@@ -1,0 +1,146 @@
+
+
+body {
+  margin-top: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}
+
+
+.Bed {
+  
+  position: absolute;
+  top: 10%;
+  right: 27%;
+
+}
+
+.Phone {
+  position: absolute;
+  top: 34%;
+  right: 26%;
+
+}
+
+
+
+.light1 {
+  position: absolute;
+  top: 0%;
+  left: 4%;
+ 
+
+}
+
+.light1:hover {
+  
+  opacity: .2; 
+   filter: brightness(120%); 
+    transition: opacity 0.3s ease-in-out;
+    transform: rotate(-3deg);  
+  
+}
+
+.light2 {
+  position: absolute;
+  top: 0%;
+  right: 2%;
+ 
+}
+
+.light2:hover {
+  
+  opacity: .2; 
+   filter: brightness(120%); 
+    transition: opacity 0.3s ease-in-out;
+    transform: rotate(-3deg);  
+    background-color: yellow; 
+}
+
+
+.SideTableRight {
+  position: absolute;
+  top: 38%;
+  right: 21%;
+  
+
+}
+
+.SideTableRight:hover {
+  
+  opacity: .2; 
+   filter: brightness(120%); 
+    transition: opacity 0.3s ease-in-out;
+    transform: rotate(-3deg); 
+ 
+  
+}
+
+.SideTableLeft {
+  position: absolute;
+  top: 35%;
+  left: 21.5%;
+  
+
+}
+
+.SideTableLeft:hover {
+  
+  opacity: .2; 
+   filter: brightness(120%); 
+    transition: opacity 0.3s ease-in-out;
+    transform: rotate(-3deg); 
+ 
+  
+}
+
+.Laundry {
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  
+
+}
+
+.Laundry:hover {
+  
+  opacity: .2; 
+   filter: brightness(120%); 
+    transition: opacity 0.3s ease-in-out;
+    transform: rotate(-3deg); 
+ 
+  
+}
+
+.Clothes {
+  position: absolute;
+  top: 55%;
+  right: 10%;
+  
+
+}
+
+.Clothes:hover {
+  
+  opacity: .2; 
+   filter: brightness(120%); 
+    transition: opacity 0.3s ease-in-out;
+    transform: rotate(-3deg); 
+ 
+  
+}
+
+
+.Clock {
+  position: absolute;
+  top: 10%;
+  left: 46%;
+}
+
+.Switch {
+  position: absolute;
+  top: 40%;
+  left: 88%;
+}
