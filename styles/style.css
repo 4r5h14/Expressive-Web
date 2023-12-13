@@ -151,3 +151,32 @@ body {
   top: 40%;
   left: 88%;
 }
+
+.rug{
+ 
+  position: absolute;
+  top: 70%;
+  right: 35%;
+  transform: rotate(360deg); 
+}
+
+.spill {
+
+  position: absolute;
+  top: 85%;
+  right: 45%;
+}
+
+.dirty {
+ 
+  position: absolute;
+  top: 70%;
+  right: 50%;
+}
+
+.painting{
+  position: absolute;
+  top: 10%;
+  right: 28%;
+}
+

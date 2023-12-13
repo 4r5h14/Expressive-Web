@@ -68,6 +68,33 @@ button.addEventListener('click', function(){
 });
 
 
+let dark = document.querySelector('.Clock');
+dark.addEventListener('click', function(){
+  document.body.style.background = "black";  
+
+   function getRandomColor() {
+    // Function to generate a random hex color
+    return '#' + Math.floor(Math.random()*16777215).toString(16);
+  }
+
+      // Set an interval to change the background color every 3 seconds (adjust as needed)
+      var colorChangeInterval = setInterval(function () {
+        document.body.style.background = getRandomColor();
+      }, 400); // 3 seconds in milliseconds
+  
+      // Clear the interval after 20 seconds to stop the random color changes
+      setTimeout(function () {
+        clearInterval(colorChangeInterval);
+      }, 2000); // 20 seconds in milliseconds
+
+             // Set a timer to clear the background after 20 seconds
+   setTimeout(function () {
+    document.body.style.background = ""; // Set it back to the default background
+  }, 2000); // 20 seconds in milliseconds
+}
+);
+
+
 
 let cactus = document.querySelector('.Cactus');
 cactus.addEventListener('click', function(){
@@ -111,3 +138,17 @@ painting.addEventListener('click', function () {
   painting.style.top = '10%';
   painting.style.right = '28%';
 })
+
+
+let dirty = document.querySelector('.dirty');
+dirty.addEventListener('click', function(){
+  let dish = document.querySelector(".dirty");
+  this.remove(dish);
+  
+});
+
+let soda = document.querySelector('.spill');
+soda.addEventListener('click', function(){
+  let spill = document.querySelector(".spill");
+  this.remove(spill);
+});
