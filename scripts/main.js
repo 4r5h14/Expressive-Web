@@ -68,6 +68,7 @@ switch2.addEventListener('click', function() {
 let clock = document.querySelector('.Clock');
 let switchButton = document.querySelector('.Switch');
 let isColorChanging = false; // Initialize to false
+let audio = new Audio('./assets/data/Love Shake (DJ Stereo Club Mix).wav');
 
 function getRandomColor() {
   // Function to generate a random hex color
@@ -79,25 +80,32 @@ function startColorChanging() {
   var colorChangeInterval = setInterval(function () {
     document.body.style.background = getRandomColor();
   }, 40); 
+  
 
   // Stop the interval when the switch button is clicked
   switchButton.addEventListener('click', function () {
     clearInterval(colorChangeInterval);
     document.body.style.background = "white";
     isColorChanging = false;
+    audio.pause();
   });
 }
 
 clock.addEventListener('click', function () {
+ 
   if (!isColorChanging) {
     isColorChanging = true;
     document.body.style.background = getRandomColor();
     startColorChanging();
+    audio.pause(); // Pause any ongoing audio
+    audio.currentTime = 0; // Reset audio to the beginning
+    audio.play(); // Play the audio
   } else {
     // Reset the background color and start the color-changing process again
     document.body.style.background = "white";
     isColorChanging = false;
-    clock.click(); // Simulate a click to restart the process
+    clock.click()
+    audio.pause(); // Simulate a click to restart the process
   }
 });
 
