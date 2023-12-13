@@ -19,8 +19,8 @@ body {
 
 .Phone {
   position: absolute;
-  top: 34%;
-  right: 26%;
+  top: 60%;
+  right: 30%;
 
 }
 
@@ -63,61 +63,40 @@ body {
 .SideTableRight {
   position: absolute;
   top: 38%;
-  right: 21%;
-  
+  right: 2%;
+  transition: opacity 0.3s ease-in-out;
+  transform: rotate(-30deg); 
 
 }
 
 .Cactus {
   position: absolute;
-  top: 36%;
-  right: 22%;
-  
-
-}
-
-.SideTableRight:hover {
-  
-  opacity: .2; 
-   filter: brightness(120%); 
-    transition: opacity 0.3s ease-in-out;
-    transform: rotate(-3deg); 
- 
-  
+  top: 80%;
+  right: 2%;
 }
 
 .SideTableLeft {
   position: absolute;
-  top: 35%;
-  left: 21.5%;
-  
+  top: 38%;
+  left: 5%;
+  transition: opacity 10s ease-in-out;
+  transform: rotate(270deg); 
 
 }
 
-.SideTableLeft:hover {
-  
-  opacity: .2; 
-   filter: brightness(120%); 
-    transition: opacity 0.3s ease-in-out;
-    transform: rotate(-3deg); 
- 
-  
-}
 
 .Laundry {
   position: absolute;
   top: 55%;
   left: 10%;
-  
-
 }
 
 .Laundry:hover {
   
-  opacity: .2; 
-   filter: brightness(120%); 
+  opacity: .10; 
+   filter: brightness(200%); 
     transition: opacity 0.3s ease-in-out;
-    transform: rotate(-3deg); 
+    transform: rotate(2deg); 
  
   
 }
@@ -135,8 +114,6 @@ body {
     transition: opacity 0.3s ease-in-out;
     transform: rotate(-3deg);   
 }
-
-
 
 
 .Clothes2 {
@@ -159,6 +136,14 @@ body {
   position: absolute;
   top: 10%;
   left: 46%;
+}
+
+
+.p5painting{
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  transform: rotate(-30deg);  
 }
 
 .Switch {
