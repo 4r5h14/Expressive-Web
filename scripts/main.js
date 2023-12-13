@@ -6,7 +6,6 @@ btn.addEventListener('click', function(){
        this.remove(showMe);   
 });
 
-
 let disappear = document.querySelector('.Clothes');
 disappear.addEventListener('click', function(){
   let clothes = document.querySelector(".Clothes");
@@ -36,9 +35,7 @@ disappear2.addEventListener('click', function(){
 
   // Append the duplicate to the document
   document.body.appendChild(duplicate);
-
-
-  
+ 
   //remove both objects
   disappear2.remove();
   duplicate.addEventListener('click', function () {
@@ -51,48 +48,60 @@ disappear2.addEventListener('click', function(){
 
 let lightleft = document.querySelector('.light1');
 lightleft.addEventListener('click', function() {
-    document.body.style.backgroundColor = "red";    
+    document.body.style.backgroundColor = "lightblue";    
 });
 
 
 let lightright = document.querySelector('.light2');
 lightright.addEventListener('click', function() {
-       document.body.style.backgroundColor = "yellow";
+       document.body.style.backgroundColor = "lightyellow";
     
 });
 
-
-let button = document.querySelector('.Switch');
-button.addEventListener('click', function(){
-  document.body.style.background = "white";  
+let switch2 = document.querySelector('.Switch');
+switch2.addEventListener('click', function() {
+    document.body.style.backgroundColor = "white";    
 });
 
 
-let dark = document.querySelector('.Clock');
-dark.addEventListener('click', function(){
-  document.body.style.background = "black";  
 
-   function getRandomColor() {
-    // Function to generate a random hex color
-    return '#' + Math.floor(Math.random()*16777215).toString(16);
-  }
+let clock = document.querySelector('.Clock');
+let switchButton = document.querySelector('.Switch');
+let isColorChanging = false; // Initialize to false
 
-      // Set an interval to change the background color every 3 seconds (adjust as needed)
-      var colorChangeInterval = setInterval(function () {
-        document.body.style.background = getRandomColor();
-      }, 400); // 3 seconds in milliseconds
-  
-      // Clear the interval after 20 seconds to stop the random color changes
-      setTimeout(function () {
-        clearInterval(colorChangeInterval);
-      }, 2000); // 20 seconds in milliseconds
-
-             // Set a timer to clear the background after 20 seconds
-   setTimeout(function () {
-    document.body.style.background = ""; // Set it back to the default background
-  }, 2000); // 20 seconds in milliseconds
+function getRandomColor() {
+  // Function to generate a random hex color
+  return '#' + Math.floor(Math.random() * 16777215).toString(16);
 }
-);
+
+function startColorChanging() {
+  // Set an interval to change the background color every 40 milliseconds
+  var colorChangeInterval = setInterval(function () {
+    document.body.style.background = getRandomColor();
+  }, 40); 
+
+  // Stop the interval when the switch button is clicked
+  switchButton.addEventListener('click', function () {
+    clearInterval(colorChangeInterval);
+    document.body.style.background = "white";
+    isColorChanging = false;
+  });
+}
+
+clock.addEventListener('click', function () {
+  if (!isColorChanging) {
+    isColorChanging = true;
+    document.body.style.background = getRandomColor();
+    startColorChanging();
+  } else {
+    // Reset the background color and start the color-changing process again
+    document.body.style.background = "white";
+    isColorChanging = false;
+    clock.click(); // Simulate a click to restart the process
+  }
+});
+
+
 
 
 
@@ -104,6 +113,9 @@ cactus.addEventListener('click', function(){
   cactus.style.top = '36%';
   cactus.style.right = '22%'; 
 });
+
+
+
 
 
 let sidetable = document.querySelector('.SideTableLeft');
@@ -151,4 +163,15 @@ let soda = document.querySelector('.spill');
 soda.addEventListener('click', function(){
   let spill = document.querySelector(".spill");
   this.remove(spill);
+});
+
+
+
+let hypertext = document.querySelector('.beanbag');
+hypertext.addEventListener('click', function(){
+  // Get the value of the 'href' attribute
+  let link = hypertext.getAttribute('href');
+
+  // Navigate to the linked webpage
+  window.location.href = "https://4r5h14.github.io/Hypertext_Project/";
 });

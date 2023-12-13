@@ -8,6 +8,19 @@ body {
 
 }
 
+.Clock {
+  position: absolute;
+  top: 10%;
+  left: 46%;
+}
+
+.Clock:hover {
+  opacity: .2; 
+  filter: brightness(120%); 
+   transition: opacity 0.3s ease-in-out;
+   transform: rotate(-3deg);  
+}
+
 
 .Bed {
   
@@ -60,9 +73,24 @@ body {
 }
 
 
+.beanbag {
+  position: absolute;
+  top: 55%;
+  left: 2%;
+}
+
+.beanbag:hover {
+  opacity: .2; 
+  filter: brightness(120%); 
+   transition: opacity 0.3s ease-in-out;
+   transform: rotate(-3deg);  
+}
+
+
+
 .SideTableRight {
   position: absolute;
-  top: 38%;
+  top: 45%;
   right: 2%;
   transition: opacity 0.3s ease-in-out;
   transform: rotate(-30deg); 
@@ -73,6 +101,7 @@ body {
   position: absolute;
   top: 80%;
   right: 2%;
+  transform: rotate(5deg); 
 }
 
 .SideTableLeft {
@@ -96,10 +125,10 @@ body {
   opacity: .10; 
    filter: brightness(200%); 
     transition: opacity 0.3s ease-in-out;
-    transform: rotate(2deg); 
- 
-  
+    transform: rotate(2deg);  
 }
+
+
 
 .Clothes {
   position: absolute;
@@ -132,11 +161,6 @@ body {
 
 
 
-.Clock {
-  position: absolute;
-  top: 10%;
-  left: 46%;
-}
 
 
 .p5painting{
@@ -151,6 +175,9 @@ body {
   top: 40%;
   left: 88%;
 }
+
+
+
 
 .rug{
  
@@ -179,4 +206,5 @@ body {
   top: 10%;
   right: 28%;
 }
+
 
